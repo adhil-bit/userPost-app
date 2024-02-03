@@ -41,6 +41,10 @@ mongoose.connect(MONGO_URI, {
   });
   
   const postSchema = new mongoose.Schema({
+    postTitle: {
+      type: String,
+      required: true,
+    },
     postContent: {
       type: String,
       required: true,
