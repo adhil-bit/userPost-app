@@ -19,9 +19,11 @@ app.get('/', (req, res) => {
 
 app.post('/post-create', auth.createPost);
 
+app.get('/get-allpost', auth.getPostDetails)
+
 app.post('/add-user', auth.addUser);
 
 // Server setup
-app.listen(3001, () => {
+app.listen(3002, () => {
   console.log('Server is Running');
 });
