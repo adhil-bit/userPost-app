@@ -1,2 +1,4 @@
 # userPost-app
-post creating and user module with mongoodb
+post creating and user module
+using mongooDb - mongoose
+
