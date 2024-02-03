@@ -14,8 +14,9 @@ git clone https://github.com/adhil-bit/userPost-app.git
 
 ### step 3: node app.js
 
-## postman collection also attached
-## For docker related 
+### postman collection --> in postman-collection.json
+
+### For docker related 
 image build --> 
 1.docker-compose build 
 2. docker compose up -d
