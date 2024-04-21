@@ -1,0 +1,351 @@
+{
+	"info": {
+		"_postman_id": "84c24486-fba3-4ce2-a520-71bfbe59bc0c",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19662957",
+		"_collection_link": "https://twaddanv1.postman.co/workspace/cityway~b53debce-09ac-46c2-a4b1-c4b7bdabec26/collection/19663058-84c24486-fba3-4ce2-a520-71bfbe59bc0c?action=share&source=collection_link&creator=19662957"
+	},
+	"item": [
+		{
+			"name": "user creat",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"oo nj aas sef\",\n    \"email\": \"iiihasjkk@yopmail.com\",\n    \"mobileNo\":909009\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3001/add-user",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"add-user"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ndetest",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\" : \"oo nj aas sef\",\n    \"email\": \"iiihasjkk@yopmail.com\",\n    \"mobileNo\":909009\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3001/add-user",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"add-user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "156"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9c-APeu6HdttYoZVAjDJFVxmbmpFd4\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 03 Feb 2024 19:25:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"oo nj aas sef\",\n    \"mobileNo\": \"909009\",\n    \"email\": \"iiihasjkk@yopmail.com\",\n    \"_id\": \"65be931c2e0a57ecab6b6540\",\n    \"createdAt\": \"2024-02-03T19:25:16.141Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "post create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\" :\"65be931c2e0a57ecab6b6540\",\n    \"postContent\":\"hello world\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3001/post-create",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"post-create"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "user creat Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\" :\"65be931c2e0a57eca6b6540\",\n    \"postContent\":\"hello world5\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3001/post-create",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"post-create"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "64"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"40-OpbWWRJLtchmQHNQ+T9LeY4mUkA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 03 Feb 2024 19:35:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"No user found with userId, please enter valid userId\"\n}"
+				}
+			]
+		},
+		{
+			"name": "list and search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3002/get-allpost?postTitle=first",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3002",
+					"path": [
+						"get-allpost"
+					],
+					"query": [
+						{
+							"key": "postTitle",
+							"value": "first"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "list and search",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3002/get-allpost?postTitle=first",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3002",
+							"path": [
+								"get-allpost"
+							],
+							"query": [
+								{
+									"key": "postTitle",
+									"value": "first"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "99"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 03 Feb 2024 20:45:38 GMT"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1706994039"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "218"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"da-0WEFkzlZRYMH29ABQkkjVC2cKfY\""
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"65bea58757cf4cc076c3524e\",\n        \"postTitle\": \"first\",\n        \"postContent\": \"how much?\",\n        \"userId\": {\n            \"_id\": \"65be9da32f127f313e38f35d\",\n            \"name\": \" sef\",\n            \"email\": \"sefasjkk@yopmail.com\"\n        },\n        \"createdAt\": \"2024-02-03T20:43:51.611Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		}
+	]
+}
