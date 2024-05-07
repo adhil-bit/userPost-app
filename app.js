@@ -19,11 +19,13 @@ app.get('/', (req, res) => {
 
 app.post('/post-create', auth.createPost);
 
+app.post('/email-send', auth.sendEmail);
+
 app.get('/get-allpost', auth.getPostDetails)
 
 app.post('/add-user', auth.addUser);
 
 // Server setup
-app.listen(3002, () => {
+app.listen(3005, () => {
   console.log('Server is Running');
 });

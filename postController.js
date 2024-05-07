@@ -1,7 +1,24 @@
 const { users, posts } = require('./db');
+let nodemailer = require("nodemailer");
+// let aws = require("@aws-sdk/client-ses");
+const aws = require("aws-sdk");
+let { defaultProvider } = require("@aws-sdk/credential-provider-node");
+
+
+aws.config.update({
+  accessKeyId: "accessKeyId",
+  secretAccessKey: "secretAccessKey",
+  region: "ap-south-1",
+});
+
+// Create SES transporter
+const transporter = nodemailer.createTransport({
+  SES: new aws.SES({ apiVersion: "2010-12-01" }),
+});
 
 class PostController {
   static async addUser(req, res) {
+    console.log('req')
     try {
       const { name, mobileNo, email } = req.body;
       console.log('name, mobileNo, email', name, mobileNo, email)
@@ -18,6 +35,23 @@ class PostController {
       const savedUser = await newUser.save();
     //   console.log('savedUser', savedUser)
       res.status(201).json(savedUser);
+    } catch (error) {
+      res.status(400).json({ error: error.message });
+    }
+  }
+
+  static async sendEmail(req, res) {
+    console.log('req', req)
+    try {
+      let a = await transporter.sendMail({
+        from: "dev@dataspot.ae",
+        to: "adhil@dataspot.in",
+        subject: "Message",
+        text: "I hope this message gets sent!",
+      });
+      console.log('qqqqqqq', a)
+
+      res.status(201).json(a);
     } catch (error) {
       res.status(400).json({ error: error.message });
     }
