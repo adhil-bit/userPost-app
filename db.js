@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const validator = require('validator');
 
-const MONGO_URI = 'mongodb://127.0.0.1:27017/userPostApp';
+const MONGO_URI = 'mongodb://127.0.0.1:27017/userPosts';
 // const MONGO_URI = 'mongodb+srv://adhildspot:Adhil@123cluster0.z81xrfj.mongodb.net/?retryWrites=true&w=majority';
 //'mongodb://127.0.0.1:27017/adhildspot/userPostApp';
 

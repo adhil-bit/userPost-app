@@ -1,4 +1,4 @@
-const { users, posts } = require('./db');
+const { users, posts } = require('../db');
 let nodemailer = require("nodemailer");
 // let aws = require("@aws-sdk/client-ses");
 const aws = require("aws-sdk");
@@ -75,8 +75,11 @@ class PostController {
         postTitle,
         postContent,
       });
+      console.log('newPost', newPost)
+
 
       const savedPost = await newPost.save();
+      console.log('savedPost', savedPost)
       res.status(201).json(savedPost);
     } catch (error) {
       res.status(400).json({ error: error.message });

@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const auth = require('./postController');
+const auth = require('./controller/postController');
 const rateLimit = require('express-rate-limit');
 
 // Middleware to parse JSON
